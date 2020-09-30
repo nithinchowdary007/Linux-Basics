@@ -1,0 +1,9 @@
+================================================
+Basic shell scripting
+===============
+Linux provides us a way to run commands one after another without using any special operators. 
+This is done by storing the commands you want to run in a file with a .sh extension
+
+syntax: we'll run this by bash s.sh   //if we saved file as s.sh
+
+Note: if we add (#!/bin/bash) in the beginning of the file... then no need to add .sh extension to file. we can just run by (./s)
