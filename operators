@@ -1,0 +1,51 @@
+==========================================
+linux operator '>'
+=========
+> is the operator for output redirection. Meaning that you can redirect the output of any command to a file.
+ 
+syntax: <command> <input> > <file>
+ #It would save that output to a file.
+ 
+Note: if you were to use this operator on a file that already exists, it would completely erase the contents of that file and replace it with the output from your command
+
+==========================================
+linux operatot '>>'
+===========
+>> does mainly the same thing as >, with one key difference.
+>> appends the output of a command to a file, instead of erasing it.  
+
+syntax: <command> <input> >> <file>
+
+=========================================
+linux operator '&&'
+===========
+&& means as you might expect "and".
+
+syntax: <command> &&<command> <input>
+
+2nd command will work after the 1st command is done.
+if 1st command fails. 2nd command also doesnt work.
+Since the second command happens after the first command, you can use something created in the first command in the second command.
+
+Note: If we use & 2nd one will work even if 1st one doesnt work.
+
+============================================
+linux operator '$'
+============
+$ is used to give values of environmental variables.
+
+syntax: <command> $<variable>  // example: echo $USER
+
+============================================
+linux operator '|'
+===========
+The | operator allows you to take the output of a command and use it as input for a second command.
+ 
+syntax: <command1> <input1> | <command2> <input2>  // example: cat file | grep 123
+
+============================================
+linux operator ';'
+============
+The ; operator works a lot like &&, however it does not require the first command to execute successfully.
+
+syntax: <command>; <command>
