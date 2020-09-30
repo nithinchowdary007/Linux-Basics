@@ -1,0 +1,19 @@
+
+==================================================
+Processes
+================
+A process is just another word for a running program.
+
+A list of user created processes can be viewed with the ps command.
+
+To view a list of all system processes, you have to use the -ef flag i.e, ps -ef
+
+Note: the 3-5 digit numbers. Those are known as Process ID's(PID's) and they're how you interact with the processes.
+
+Note: 90% of the time you'll likely be wanting to stop these processes and that's done with the kill command.
+
+syntax: kill <PID>
+
+Another useful way to interact with PID's is through the command top.
+
+top shows you what processes are taking up the most system resources, which allows you to manage the resource allocation on your system by killing unneeded processes.
