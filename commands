@@ -1,0 +1,48 @@
+SSH
+=======
+SSH is the act of remotely accessing a machine. SSH allows you to run commands interactively on the remote machine. 
+This is done through the use of a program on the target machine, which allows the ssh client to interface with the target host.
+
+syntax: ssh <user>@<host>
+ #We'll be logged into that server.
+
+=====================================
+echo
+========
+command: echo Hello
+ #It echos/printd Hello back.
+
+=====================================
+man
+========
+Most of the commands you'll learn about have a lot of options.
+These options are known as flags. 
+
+syntax: <command> <flag> <input>. 
+
+These flags can be learned about using the man command.
+ 
+syntax: man <command>
+ #It shows what options are there for that command.
+ 
+Note: Some commands have (--help) flag which can be used insted of man command. 
+=====================================
+ls
+========
+ls is a command that lists information about every file/directory in the directory.
+
+syntax: ls
+
+======================================
+cat
+========
+cat short for concatenate, does exactly that, it outputs the contents of files to the console. 
+
+syntax: cat <file>
+
+======================================
+touch
+========
+touch is a pretty simple command, it creates files.
+
+syntax: touch <file>
