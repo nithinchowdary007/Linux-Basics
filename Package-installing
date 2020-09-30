@@ -1,0 +1,7 @@
+==================================================
+installing packages
+===============
+A package is essentially a program, you can think of it like an exe file on windows.
+To install packages you need root permissions, as each package will likely modify some system critical directories such as /usr.
+
+syntax: apt install package
