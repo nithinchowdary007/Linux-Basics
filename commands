@@ -61,4 +61,138 @@ Relativepath syntax:
    to run binary in home dir    : ~/hello.bin
 
 Note: A binary is just executable code, think a windows exe file
+============================================
+chmod
+==========
+chmod allows you to set the different permissions for a file, and control who can read it.
+
+syntax: chmod <permissions> <file>
+ 
+permission x - to execute
+permission r - to read
+permission w - to write
+
+user   - u
+group  - g
+others - o
+all    - a
+
+Removes the permission - -
+Grants the permission  - + //The permission is added to the existing permissions
+Equals sign            - = //Set a permission and remove others
+
+ # usage: chmod u=rw,og=r, <file>
+ # usage: chmod a+x <file>
+ # usage: chmod +x <file> 
+
+=============================================
+chown
+=========
+That is done using the chown command, which allows us to change the user and group for any file. 
+
+syntax: chown user:group file
+
+==============================================
+rm
+==========
+rm is used to remove files and directories
+It is not worth noting that you need write permissions to the file to deleted so you cant just delete any file if you're a regular user.
+
+syntax: rm <file/dir>
+
+==============================================
+mv
+==========
+mv allows you to move files from one place to another
+
+syntax: mv <file> <destination>
+
+to move a file to my home directory I could type: mv file ~  
+
+You can also use mv to change the name of file
+
+syntax: mv <file> ~/<another named file>
+
+===============================================
+cp
+===========
+cp does mainly the same thing as mv, except instead of moving the file it duplicates(copies) it.
+
+syntax: cp <file> <destination>
+
+===============================================
+cd
+===========
+Linux allows you to change the location of the current directory through the use of the cd command.
+
+syntax: cd <directory>
+
+===============================================
+mkdir
+===========
+you'll want to make a new directory to store files in, and that is done using mkdir
+
+syntax: mkdir <directory name>
+
+===============================================
+ln
+===========
+ln completely duplicates the file, and links the duplicate to the original copy.
+
+syntax: ln source destination
+
+===============================================
+find
+===========
+find is used to find files.
+
+command: find files   //lists all commands in that present directory
+
+command: find <dir>   //lists all files in that directory and sub directories of that directory
+
+Note:  it can only list files in directories that you have permission to access.
+
+command: find dir -user   //list every file owned by a specific user
+
+command:  find dir -group //list every file owned by a specific group
+
+================================================
+grep
+============
+grep allows you find data inside of data.
+it is arguably the best way to narrow the output down to better find what your looking for.
+
+syntax:grep <string> <file>  (or)  grep <regular expression> <file>
+
+Note: You can search multiple files at the same time, (syntax: grep <string> <file> <file2> )
+
+================================================
+sudo
+============
+The root user is the equivalent of the administrator user on Windows.
+Like Windows certain commands, and certain things you download from the internet will require admin permissions.
+
+That's where sudo comes in. sudo is Linux's run as administrator button.
+
+syntax:  sudo <command>  // you need to have your current user's password to use it.
+
+================================================
+adding user, group and user to group
+=============
+command: adduser
+command: addgroup
+command: usermod
+
+syntax: sudo adduser username
+syntax: sudo addgroup groupname
+syntax: usermod -a -G <groups seperated by commas> <user>
+
+================================================
+nano
+===============
+nano is a terminal based text editor.
+
+syntax: nano <file you want to write to>
+
+Note: ctrl+x to save file.
 
