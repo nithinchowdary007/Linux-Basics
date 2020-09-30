@@ -1,0 +1,25 @@
+================================================
+Important files and directories
+===============
+
+/etc/passwd  - Stores user information - Often used to see all the users on a system
+
+/etc/shadow  - Has all the passwords of these users
+
+/tmp         - Every file inside it gets deleted upon shutdown - used for temporary files
+
+/etc/sudoers - Used to control the sudo permissions of every user on the system
+
+/home        - The directory where all your downloads, documents etc are. - The equivalent on Windows is C:\Users\<user>
+
+/root        - The root user's home directory - The equivilent on Windows is C:\Users\Administrator
+
+/usr         - Where all your software is installed 
+
+/bin
+/sbin        - Used for system critical files - DO NOT DELETE
+
+/var         - The Linux miscellaneous directory, a myriad of processes store data in /var
+
+$PATH        - Stores all the binaries you're able to run - same as $PATH on Windows
+               $PATH is an environment variable that contains all the binaries you're able to execute. 
