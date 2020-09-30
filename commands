@@ -46,3 +46,19 @@ touch
 touch is a pretty simple command, it creates files.
 
 syntax: touch <file>
+
+=======================================
+Running a binay
+========
+Occasionally there will be times when you want to run downloaded or user created programs. 
+This is done by providing the full path to the binary or relative path
+
+Fullpath syntax: /tmp/aa/hello.bin
+
+Relativepath syntax: 
+   to run binary in current dir : ./hello.bin
+   to run binary in previous dir: ../hello.bin
+   to run binary in home dir    : ~/hello.bin
+
+Note: A binary is just executable code, think a windows exe file
+
